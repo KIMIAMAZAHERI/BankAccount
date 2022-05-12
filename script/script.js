@@ -8,9 +8,9 @@
        case "1":
            this.deposit();
         case"2":
-           this.account.withdrawal();
+           this.withdrawal();
         case"3":
-           this.account.getBlance();
+           this.getBlance();
         default:
         console.log("Please select one of these choices")
         this.atm();
