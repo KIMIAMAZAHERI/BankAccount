@@ -12,12 +12,10 @@ let account = {
     
      if (choice===1){
         this.deposit();
-        console.loggingout;
         
      }
      else if (choice===2){
       this.withdrawal();
-      console.loggingout;
      }
      else{
         console.log("Please select one of these choices")
@@ -28,6 +26,7 @@ let account = {
     getBlance:function( amount = 100 ){
        
        alert (" Hi  " +  this.accountName + " the balance of your account is " + this.balance);
+       console.loggingout();
     },
     deposit:function(){
        const depo=parseFloat(prompt("Please inter amount of your deposit"));
