@@ -7,15 +7,17 @@ let account = {
 
      atm:function(){
 
-      var choice = parseInt(prompt("Please press 1 for deposite 2 for withdraw."));
+      const choice = parseInt(prompt("Please press 1 for deposite 2 for withdraw."));
      this.atm =choice;
     
      if (choice===1){
         this.deposit();
         
+        
      }
      else if (choice===2){
       this.withdrawal();
+
      }
      else{
         console.log("Please select one of these choices")
@@ -26,7 +28,7 @@ let account = {
     getBlance:function( amount = 100 ){
        
        alert (" Hi  " +  this.accountName + " the balance of your account is " + this.balance);
-       console.loggingout();
+       
     },
     deposit:function(){
        const depo=parseFloat(prompt("Please inter amount of your deposit"));
@@ -38,6 +40,7 @@ let account = {
        alert ("Sorry, wrong input!");
       }
       console.log(this);
+      alert (" Hi  " +  this.accountName + " the balance of your account is " + this.balance);
    }, 
     withdrawal:function(){
        const withdraw=parseFloat(prompt("Please inter amount of your withdrawal "));
@@ -64,8 +67,8 @@ let account = {
    // }s;
  // }
 };
-account.atm();
 account.getAccountName();
+account.atm();
 account.getBlance();
 account.deposit();
 account.withdrawal();
